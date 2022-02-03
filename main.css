@@ -1,0 +1,297 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root {
+    /*Primary download*/
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+
+     /* Neutral texts*/
+
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+body {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+h1 , h2 , h3 , h4 {
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+    margin: 10px;
+}
+
+p {
+    color: var(--GrayishBlue);
+    Font-size: 18px;
+}
+
+.text , header {
+    text-align: center;
+}
+
+header {
+    margin: 100px 20px;
+}
+
+header img {
+    margin: 30px;
+}
+header p {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+.download a {
+    padding: 13px 20px;
+    color: white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+}
+
+.download a:first-child {
+    background-color: var(--StrongCyan);
+    margin: 5px;
+}
+.download a:last-child {
+    background-color: var(--LightBlue);
+    margin: 5px;
+}
+
+.one {
+    margin: 50px;
+}
+.one h2{
+    margin: 20px;
+}
+
+div.sec {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 100px 50px;
+}
+div.sec img {
+    width: 800px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin-left: -150px;
+}
+
+
+
+div.sec div.sec-1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 75px;
+}
+div.sec div.sec-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+div.sec div:last-child {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: -70px;
+}
+
+.sec h3{
+    font-weight: 600px;
+    margin: 10px;
+}
+
+.two h2 {
+    margin: 20px 10px;
+}
+
+div.devices {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+div.three p {
+    margin: 20px 0px 50px 0px;
+}
+
+section {
+    display: flex;
+    margin: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+div.kid {
+    margin: 20px auto;
+}
+
+div.brands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 10px;
+}
+
+
+div.last h2 {
+    margin: 20px 0px;
+}
+
+div.last p {
+    margin: 20px 0px 50px 0px;
+}
+
+footer {
+    margin: 100px 50px 30px 50px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+footer img {
+    width: 50px;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+}
+
+footer a {
+    color: var(--DarkGrayishBlue);
+}
+
+div.footer-imgs img {
+    width: 20px;
+    margin: 5px;
+}
+
+.odd-ul {
+    margin-top: -37px;
+}
+
+
+
+@media (max-width:375px)  {
+    body {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;   
+    }
+
+    div.sec img , div.devices img {
+        width: 250px;
+    }
+
+    
+}
+
+@media (min-width:376px) and (max-width:499px){
+    div.sec img , div.devices img {
+        width: 300px;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:1100px){
+    div.sec img , div.devices img {
+        width: 350px;
+    }
+
+}
+
+@media (max-width:1100px) {
+
+    .download {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 20px 40px;
+    }
+
+    p {
+        color: var(--GrayishBlue);
+        Font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div.last p {
+        margin: 20px 15px 50px 15px;
+    }
+
+    div.sec {
+        text-align: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    div.sec img {
+        margin-left: 0px;
+        margin: auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    div.sec div.sec-1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    div.sec div.sec-2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    div.sec div:last-child {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    div.brands {
+        flex-direction: column;
+    }
+    div.brands img {
+        margin: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin: 100px 0px 0px 0px;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+}
